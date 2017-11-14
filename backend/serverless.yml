@@ -1,4 +1,4 @@
-service: serverless-multiplayer-game
+service: isocan-fieldactivity-service
 
 provider:
   name: aws
@@ -12,7 +12,7 @@ provider:
       Action:
         - "sdb:PutAttributes"
         - "sdb:Select"
-      Resource: "arn:aws:sdb:${self:provider.region}:*:domain/bombermon"
+      Resource: "arn:aws:sdb:${self:provider.region}:*:domain/isocanfieldactivity"
     - Effect: "Allow"
       Action:
         - "iot:DescribeEndpoint"
@@ -24,9 +24,9 @@ provider:
 
 functions:
   game:
-    handler: handler.game
+    handler: handler.fieldactivityservice
     events:
       - http: GET iot/keys
-      - http: POST avatars/available
-      - http: PUT avatars/available
-      - http: OPTIONS avatars/available
+      - http: POST fields/available
+      - http: PUT fields/available
+      - http: OPTIONS fields/available

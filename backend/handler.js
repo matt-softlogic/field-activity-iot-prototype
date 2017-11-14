@@ -13,15 +13,15 @@ module.exports.game = (event, context, callback) => {
       case 'GET /iot/keys':        
         iot.getIoTKeys(callback);
         break;
-      case 'POST /avatars/available':   
+      case 'POST /fields/available':   
         id = JSON.parse(event.body).id;     
         avatar.setAvatar(id, callback);
         break;
-      case 'PUT /avatars/available':
+      case 'PUT /fields/available':
         id = JSON.parse(event.body).id;
         avatar.releaseAvatar(id, callback);
         break;
-      case 'OPTIONS /avatars/available':
+      case 'OPTIONS /fields/available':
         utils.optionsHandler(callback);
         break;
       default:
