@@ -3,7 +3,7 @@ const simpledb = new AWS.SimpleDB();
 const iam = new AWS.IAM();
 const sts = new AWS.STS();
 
-const domainName = 'bombermon';
+const domainName = 'isocanfieldactivity';
 const numberOfPlayers = 8;
 
 const attr = {
@@ -51,7 +51,7 @@ simpledb.createDomain({ DomainName: domainName }, (err, data) => {
   });
 });
 
-const roleName = 'bombermon-iot';
+const roleName = 'fieldactivity-iot';
 
 // get the account id
 sts.getCallerIdentity({}, (err, data) => {

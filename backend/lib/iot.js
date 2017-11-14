@@ -4,7 +4,7 @@ const utils = require('./utils');
 const AWS = require('aws-sdk');
 const iotClient = new AWS.Iot();
 const sts = new AWS.STS();
-const roleName = 'bombermon-iot';
+const roleName = 'fieldactivity-iot';
 
 module.exports.getIoTKeys = (callback) => {
 

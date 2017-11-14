@@ -83,7 +83,7 @@ module.exports.releaseAvatar = (id, callback) => {
 };
 
 // Constants
-const domainName = 'bombermon';
+const domainName = 'isocanfieldactivity';
 
 const attr = {
     avatarId: 'avatar_id',

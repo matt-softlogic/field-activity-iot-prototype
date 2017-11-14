@@ -1,19 +1,19 @@
 {
-  "name": "serverless-multiplayer-game-backend",
+  "name": "field-activity-iot-prototype",
   "version": "1.0.0",
-  "description": "The backend of a multiplayer game (Bomberman-like) using Serverless concepts",
+  "description": "A proof of concept to handle bi-directional field activity protobuf streaming for Mercury project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zanon-io/serverless-multiplayer-game.git"
+    "url": "https://github.com/matt-softlogic/field-activity-iot-prototype"
   },
   "keywords": [
     "Serverless",
     "Serverless Framework",
     "Multiplayer Game"
   ],
-  "author": "Diego Zanon",
+  "author": "Matt Patterson",
   "license": "MIT"
 }
